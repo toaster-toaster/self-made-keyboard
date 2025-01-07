@@ -1,0 +1,51 @@
+<html>
+  <body>
+    <h2>1. ファームウェアの実装</h2>
+    <h3>タスク</h3>
+    <ul>
+      <li>Rustのでバックツールを用意する</li>
+      <li>RustをRaspberry pi Picoを使って動かす</li>
+      <li>他のファームウェアを見てキーボード用のファームウェアの実装を知る</li>
+    </ul>
+    <h2>2. Keyboard Layout Dedign</h2>
+    <p>Keyboard Layout Editorを使ってKeyboardのレイアウトを行う</p>
+    <a
+      href="https://yskoht.hatenablog.com/entry/2020/12/08/001444"
+      target="_blank"
+      >こちら</a
+    >によると Keyboard Layout
+    Editorを使って配置を決めるそのjsonデータをKiCadにインポートすることができる。まずはここの記事を参考にして
+    Keyboard Layout
+    Editorでキーボードのレイアウトを作成する。キーの位置はもちろん、回転や大きさやENTERのような複雑な形状も
+    作成が可能。キーボードの形は<a
+      href="https://github.com/kumaokobo/kudox-keyboard/blob/master/kudox/rev3/README.ja.md"
+      target="_blank"
+      >rev3</a
+    >を参考にして ハ型・分裂型のキーボードを作成する。
+    <h3>tools</h3>
+    <ul>
+      <li>
+        <a href="https://www.keyboard-layout-editor.com/" target="_blank"
+          >https://www.keyboard-layout-editor.com</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/Salicylic-acid3/PCB_Data" target="_blank"
+          >https://github.com/Salicylic-acid3/PCB_Data</a
+        >
+      </li>
+    </ul>
+    <h3>タスク</h3>
+    <ul>
+      <li>キーボードの配置を決める</li>
+      <li>キーボードの配置をKeyboard Layout Editorを使って実装する</li>
+      <li>KiCadを使って配線と回路を決定する。</li>
+    </ul>
+    <h2>セパレートの結合</h2>
+    <ul>
+      <li>UARTかI2Cを使って通信する.</li>
+      <li>raspberry pi pico Wを使ってBluetooth接続をする</li>
+      <li>キーマトリックスを工夫して1つのマイコンで実装</li>
+    </ul>
+  </body>
+</html>
